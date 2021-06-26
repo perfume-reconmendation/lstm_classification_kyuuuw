@@ -16,6 +16,8 @@
 | lstm_with_lemmatizated_10 | 100 | 2500 | 50 | 256 | 0.7424 |
 | lstm_with_lemmatizated_11 | 100 | 1000 | 50 | 256 | 0.7085 |
 | lstm_with_lemmatizated_12 | 200 | 1000 | 200 | 512 | 0.7068 |
+| lstm_with_lemmatizated_13 | 100 | 5000 | 50 | 512 | 0.7429 |
+| lstm_with_lemmatizated_14 | 100 | 5000 | 50 | 512 | 0.7429 |
 | lstm_with_stopword_removed_01 | 200 | 5000 | 100 | 128 | 0.7390 |
 | lstm_with_stopword_removed_02 | 200 | 2500 | 100 | 256 | 0.7300 |
 | lstm_with_stopword_removed_03 | 200 | 1000 | 100 | 256 | 0.6960 |
@@ -28,6 +30,13 @@
 | lstm_with_stopword_removed_10 | 100 | 2500 | 50 | 256 | 0.7406 |
 | lstm_with_stopword_removed_11 | 100 | 1000 | 50 | 256 | 0.7009 |
 | lstm_with_stopword_removed_12 | 200 | 1000 | 200 | 512 | 0.7032 |
+| lstm_with_stopword_removed_13 | 100 | 5000 | 50 | 512 | 0.7032 |
+| lstm_with_stopword_removed_14 | 200 | 5000 | 100 | 512 | 0.7387 |
+| lstm_with_stopword_removed_15 | 200 | 1000 | 200 | 512 | 0.7441 |
+| bi_lstm_with_lemmatizated_01 | 200 | 5000 | 100 | 256 |
 
 * lemmatizate 하면 미세하게 0.01 정도 accuracy 향상 효과가 있음
-* num_words 는 대체로 큰것이 좋음. 근데 특이하게 embedding 이 클때는 오히려 
+* num_words 는 대체로 큰것이 좋음. 근데 특이하게 embedding 이 클때는 오히려 num_words 가 적당한것이 좋았음
+* batch_size 는 상관 없거나 512 가 나음
+* padding_length 는 더 작은게 나아보임
+* embedding 은 더 작은게 나음
